@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from docx import Document
-
+import pandas as pd
+import numpy as np
 # Function to scrape university information based on subject from a single page
 def scrape_university_info_from_page(url):
     response = requests.get(url)
